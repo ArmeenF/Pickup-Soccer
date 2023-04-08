@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+}
+
+.section {
+    flex: 1;
+    /*grow*/
+    border: 1px solid;
+}
+
+@media (max-width: 768px) {
+
+    /*breakpoint*/
+    .container {
+        flex-direction: column;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
