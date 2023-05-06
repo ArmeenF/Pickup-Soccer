@@ -1,27 +1,78 @@
 .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.team-form {
+    margin-top: 50px;
+}
+
+.form-group {
     display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-.section {
-    flex: 1;
-    /*grow*/
-    border: 1px solid;
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-
-    /*breakpoint*/
-    .container {
-        flex-direction: column;
-    }
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-li {
-    margin-bottom: 5px;
+.button2 {
+    background-color: #008CBA;
+}
+
+.button3 {
+    background-color: #e50000;
+}
+
+.button4 {
+    background-color: #ffa500;
+}
+
+.team-display {
+    margin-top: 50px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team h3 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team ul {
+    flex-basis: calc(25% - 20px);
+    margin-right: 20px;
+}
+
+.team ul:last-child {
+    margin-right: 0;
 }

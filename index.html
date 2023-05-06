@@ -11,58 +11,49 @@
 
 <body>
     <div class="container">
-        <div class="section">
-            <!-- Goalkeepers Input Text Fields -->
-            <div>
-                <label for="goalkeeper1">Goalkeeper 1:</label>
-                <input type="text" id="goalkeeper1">
-            </div>
-            <div>
-                <label for="goalkeeper2">Goalkeeper 2:</label>
-                <input type="text" id="goalkeeper2">
-            </div>
-            <div>
-                <label for="goalkeeper3">Goalkeeper 3:</label>
-                <input type="text" id="goalkeeper3">
-            </div>
-            <div>
-                <label for="goalkeeper4">Goalkeeper 4:</label>
-                <input type="text" id="goalkeeper4">
-            </div>
-            <button onclick="randomizeGoalkeepers()">Randomize Goalkeepers</button>
-            <!-- Goalkeepers Output Text Fields -->
-            <h2>Team 1 Goalkeepers:</h2>
-            <ul id="team1Goalkeepers"></ul>
-
-            <h2>Team 2 Goalkeepers:</h2>
-            <ul id="team2Goalkeepers"></ul>
+        <h1>Soccer Team Randomizer</h1>
+        <div class="team-form">
+            <h2>Enter Player Names</h2>
+            <form>
+                <div class="form-group">
+                    <label>Goalkeepers:</label>
+                    <input type="text" name="gk1" placeholder="Goalkeeper 1" required />
+                    <input type="text" name="gk2" placeholder="Goalkeeper 2" required />
+                </div>
+                <div class="form-group">
+                    <label>Defenders:</label>
+                    <input type="text" name="def1" placeholder="Defender 1" required />
+                    <input type="text" name="def2" placeholder="Defender 2" required />
+                    <input type="text" name="def3" placeholder="Defender 3" required />
+                    <input type="text" name="def4" placeholder="Defender 4" required />
+                    <input type="text" name="def5" placeholder="Defender 5" required />
+                    <input type="text" name="def6" placeholder="Defender 6" required />
+                    <input type="text" name="def7" placeholder="Defender 7" required />
+                    <input type="text" name="def8" placeholder="Defender 8" required />
+                </div>
+                <div class="form-group">
+                    <label>Midfielders:</label>
+                    <input type="text" name="mid1" placeholder="Midfielder 1" required />
+                    <input type="text" name="mid2" placeholder="Midfielder 2" required />
+                    <input type="text" name="mid3" placeholder="Midfielder 3" required />
+                    <input type="text" name="mid4" placeholder="Midfielder 4" required />
+                    <input type="text" name="mid5" placeholder="Midfielder 5" required />
+                    <input type="text" name="mid6" placeholder="Midfielder 6" required />
+                </div>
+                <div class="form-group">
+                    <label>Forwards:</label>
+                    <input type="text" name="fwd1" placeholder="Forward 1" required />
+                    <input type="text" name="fwd2" placeholder="Forward 2" required />
+                    <input type="text" name="fwd3" placeholder="Forward 3" required />
+                    <input type="text" name="fwd4" placeholder="Forward 4" required />
+                    <input type="text" name="fwd5" placeholder="Forward 5" required />
+                    <input type="text" name="fwd6" placeholder="Forward 6" required />
+                </div>
+                <button class="button" onclick="randomize()">Randomize Players</button>
+                <button class="button button2" onclick="fillNames()">Fill With Random Names</button>
+                <button class="button button3" type="reset" value="Reset">Reset Fields</button>
+                <button class="button button4" onClick="window.location.reload();">Refresh Page</button>
         </div>
-        <div class="section"><!-- Midfielders Input Text Fields -->
-            <div>
-                <label for="midfielder1">midfielder 1:</label>
-                <input type="text" id="midfielder1">
-            </div>
-            <div>
-                <label for="midfielder2">midfielder 2:</label>
-                <input type="text" id="midfielder2">
-            </div>
-            <div>
-                <label for="midfielder3">midfielder 3:</label>
-                <input type="text" id="midfielder3">
-            </div>
-            <div>
-                <label for="midfielder4">midfielder 4:</label>
-                <input type="text" id="midfielder4">
-            </div>
-            <button onclick="randomizeMidfielders()">Randomize Midfielders</button>
-            <!-- Midfielders Output Text Fields -->
-            <h2>Team 1 Midfielders:</h2>
-            <ul id="team1Midfielders"></ul>
-
-            <h2>Team 2 Midfielders:</h2>
-            <ul id="team2Midfielders"></ul>
-        </div>
-        <div class="section">3</div>
     </div>
     <!-- Scripts -->
     <script src="index.js"></script>
