@@ -1,62 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pickup Soccer Team Generator</title>
-    <link rel="stylesheet" href="style.css">
+	<title>Hyperspace by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
-<body>
-    <div class="container">
-        <h1>Soccer Team Randomizer</h1>
-        <div class="team-form">
-            <h2>Enter Player Names</h2>
-            <form>
-                <div class="form-group">
-                    <label>Goalkeepers:</label>
-                    <input type="text" name="gk1" placeholder="Goalkeeper 1" required />
-                    <input type="text" name="gk2" placeholder="Goalkeeper 2" required />
-                </div>
-                <div class="form-group">
-                    <label>Defenders:</label>
-                    <input type="text" name="def1" placeholder="Defender 1" required />
-                    <input type="text" name="def2" placeholder="Defender 2" required />
-                    <input type="text" name="def3" placeholder="Defender 3" required />
-                    <input type="text" name="def4" placeholder="Defender 4" required />
-                    <input type="text" name="def5" placeholder="Defender 5" required />
-                    <input type="text" name="def6" placeholder="Defender 6" required />
-                    <input type="text" name="def7" placeholder="Defender 7" required />
-                    <input type="text" name="def8" placeholder="Defender 8" required />
-                </div>
-                <div class="form-group">
-                    <label>Midfielders:</label>
-                    <input type="text" name="mid1" placeholder="Midfielder 1" required />
-                    <input type="text" name="mid2" placeholder="Midfielder 2" required />
-                    <input type="text" name="mid3" placeholder="Midfielder 3" required />
-                    <input type="text" name="mid4" placeholder="Midfielder 4" required />
-                    <input type="text" name="mid5" placeholder="Midfielder 5" required />
-                    <input type="text" name="mid6" placeholder="Midfielder 6" required />
-                </div>
-                <div class="form-group">
-                    <label>Forwards:</label>
-                    <input type="text" name="fwd1" placeholder="Forward 1" required />
-                    <input type="text" name="fwd2" placeholder="Forward 2" required />
-                    <input type="text" name="fwd3" placeholder="Forward 3" required />
-                    <input type="text" name="fwd4" placeholder="Forward 4" required />
-                    <input type="text" name="fwd5" placeholder="Forward 5" required />
-                    <input type="text" name="fwd6" placeholder="Forward 6" required />
-                </div>
-                <button class="button" onclick="randomize()">Randomize Players</button>
-                <button class="button button2" onclick="fillNames()">Fill With Random Names</button>
-                <button class="button button3" type="reset" value="Reset">Reset Fields</button>
-                <button class="button button4" onClick="window.location.reload();">Refresh Page</button>
-        </div>
-    </div>
-    <!-- Scripts -->
-    <script src="index.js"></script>
+<body class="is-preload">
+
+	<!-- Sidebar
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Welcome</a></li>
+					<li><a href="#one">Who we are</a></li>
+					<li><a href="#two">What we do</a></li>
+					<li><a href="#three">Get in touch</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section> -->
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1>Soccer Team Randomizer</h1>
+				<div class="team-form">
+					<h2>Enter Player Names</h2>
+					<form>
+						<div class="form-group">
+							<label>Goalkeepers:</label>
+							<input type="text" name="gk1" placeholder="Goalkeeper 1" required />
+							<input type="text" name="gk2" placeholder="Goalkeeper 2" required />
+						</div>
+						<div class="form-group">
+							<label>Defenders:</label>
+							<input type="text" name="def1" placeholder="Defender 1" required />
+							<input type="text" name="def2" placeholder="Defender 2" required />
+							<input type="text" name="def3" placeholder="Defender 3" required />
+							<input type="text" name="def4" placeholder="Defender 4" required />
+							<input type="text" name="def5" placeholder="Defender 5" required />
+							<input type="text" name="def6" placeholder="Defender 6" required />
+							<input type="text" name="def7" placeholder="Defender 7" required />
+							<input type="text" name="def8" placeholder="Defender 8" required />
+						</div>
+						<div class="form-group">
+							<label>Midfielders:</label>
+							<input type="text" name="mid1" placeholder="Midfielder 1" required />
+							<input type="text" name="mid2" placeholder="Midfielder 2" required />
+							<input type="text" name="mid3" placeholder="Midfielder 3" required />
+							<input type="text" name="mid4" placeholder="Midfielder 4" required />
+							<input type="text" name="mid5" placeholder="Midfielder 5" required />
+							<input type="text" name="mid6" placeholder="Midfielder 6" required />
+						</div>
+						<div class="form-group">
+							<label>Forwards:</label>
+							<input type="text" name="fwd1" placeholder="Forward 1" required />
+							<input type="text" name="fwd2" placeholder="Forward 2" required />
+							<input type="text" name="fwd3" placeholder="Forward 3" required />
+							<input type="text" name="fwd4" placeholder="Forward 4" required />
+							<input type="text" name="fwd5" placeholder="Forward 5" required />
+							<input type="text" name="fwd6" placeholder="Forward 6" required />
+						</div>
+						<button class="button" onclick="randomize()">Randomize Players</button>
+						<button class="button button2" onclick="fillNames()">Fill With Random Names</button>
+						<button class="button button3" type="reset" value="Reset">Reset Fields</button>
+						<button class="button button4" onClick="window.location.reload();">Refresh Page</button>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Untitled. All rights reserved.</li>
+				<li>Design: <a href="https://github.com/ArmeenF/Pickup-Soccer">ArmeenF</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/index.js"></script>
+
 </body>
 
 </html>
